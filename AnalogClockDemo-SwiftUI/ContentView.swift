@@ -2,20 +2,16 @@
 //  ContentView.swift
 //  AnalogClockDemo-SwiftUI
 //
-//  Created by Roro Solutions LLP on 24/12/23.
+//  Created by Gaurav Tak on 24/12/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Image(systemName: "clock").padding(.bottom, 5)
+        Text("Analog Clock").foregroundColor(Color.primary)
     }
 }
 
