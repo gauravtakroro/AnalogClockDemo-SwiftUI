@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9334F8E62B38C70E00A38484 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334F8E52B38C70E00A38484 /* HomeView.swift */; };
+		9334F8E82B38CC8500A38484 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334F8E72B38CC8500A38484 /* HomeViewModel.swift */; };
 		939DE8C42B3809E900AB499B /* AnalogClockDemo_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939DE8C32B3809E900AB499B /* AnalogClockDemo_SwiftUIApp.swift */; };
 		939DE8C62B3809E900AB499B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939DE8C52B3809E900AB499B /* ContentView.swift */; };
 		939DE8C82B3809EB00AB499B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939DE8C72B3809EB00AB499B /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		9334F8E52B38C70E00A38484 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9334F8E72B38CC8500A38484 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		939DE8C02B3809E900AB499B /* AnalogClockDemo-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AnalogClockDemo-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		939DE8C32B3809E900AB499B /* AnalogClockDemo_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockDemo_SwiftUIApp.swift; sourceTree = "<group>"; };
 		939DE8C52B3809E900AB499B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				939DE8C32B3809E900AB499B /* AnalogClockDemo_SwiftUIApp.swift */,
 				939DE8C52B3809E900AB499B /* ContentView.swift */,
 				9334F8E52B38C70E00A38484 /* HomeView.swift */,
+				9334F8E72B38CC8500A38484 /* HomeViewModel.swift */,
 				939DE8C72B3809EB00AB499B /* Assets.xcassets */,
 				939DE8C92B3809EB00AB499B /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				9334F8E62B38C70E00A38484 /* HomeView.swift in Sources */,
 				939DE8C62B3809E900AB499B /* ContentView.swift in Sources */,
 				939DE8C42B3809E900AB499B /* AnalogClockDemo_SwiftUIApp.swift in Sources */,
+				9334F8E82B38CC8500A38484 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
