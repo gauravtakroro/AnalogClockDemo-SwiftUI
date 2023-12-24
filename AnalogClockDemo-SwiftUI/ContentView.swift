@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Image(systemName: "clock").padding(.bottom, 5)
-        Text("Analog Clock").foregroundColor(Color.primary)
+        HomeView()
     }
 }
 
