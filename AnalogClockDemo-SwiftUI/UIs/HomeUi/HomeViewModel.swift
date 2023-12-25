@@ -12,4 +12,7 @@ protocol HomeViewModelProtocol: ObservableObject {
 
 class HomeViewModel: HomeViewModelProtocol {
     @Published var isDark: Bool = false
+    @Published var clockTimes: [ClockTimeModel] = [ClockTimeModel]()
+    let smallClockDimension: CGFloat = 200
+    let bigClockDimension: CGFloat = 300
 }
