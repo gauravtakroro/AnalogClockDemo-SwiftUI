@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9310142B2B39E1DF0079724A /* HomeViewPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310142A2B39E1DF0079724A /* HomeViewPortrait.swift */; };
+		9310142D2B39E22A0079724A /* HomeViewLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310142C2B39E22A0079724A /* HomeViewLandscape.swift */; };
 		9334F8E62B38C70E00A38484 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334F8E52B38C70E00A38484 /* HomeView.swift */; };
 		9334F8E82B38CC8500A38484 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334F8E72B38CC8500A38484 /* HomeViewModel.swift */; };
 		9334F8EA2B38D01A00A38484 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334F8E92B38D01A00A38484 /* HomeHeaderView.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9310142A2B39E1DF0079724A /* HomeViewPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPortrait.swift; sourceTree = "<group>"; };
+		9310142C2B39E22A0079724A /* HomeViewLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewLandscape.swift; sourceTree = "<group>"; };
 		9334F8E52B38C70E00A38484 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9334F8E72B38CC8500A38484 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9334F8E92B38D01A00A38484 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				9334F8F32B38DE3000A38484 /* ClockTimeIndicator.swift */,
 				9334F8F52B38DE7400A38484 /* ClockTimeDigits.swift */,
 				9334F8F72B38DED500A38484 /* ClockTimeView.swift */,
+				9310142A2B39E1DF0079724A /* HomeViewPortrait.swift */,
+				9310142C2B39E22A0079724A /* HomeViewLandscape.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -314,9 +320,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9334F8F42B38DE3000A38484 /* ClockTimeIndicator.swift in Sources */,
+				9310142B2B39E1DF0079724A /* HomeViewPortrait.swift in Sources */,
 				9334F8F82B38DED500A38484 /* ClockTimeView.swift in Sources */,
 				9334F8E62B38C70E00A38484 /* HomeView.swift in Sources */,
 				9334F8EA2B38D01A00A38484 /* HomeHeaderView.swift in Sources */,
+				9310142D2B39E22A0079724A /* HomeViewLandscape.swift in Sources */,
 				9334F8F62B38DE7400A38484 /* ClockTimeDigits.swift in Sources */,
 				939DE8C62B3809E900AB499B /* ContentView.swift in Sources */,
 				939DE8C42B3809E900AB499B /* AnalogClockDemo_SwiftUIApp.swift in Sources */,

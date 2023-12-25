@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol HomeViewModelProtocol: ObservableObject {
 }
@@ -15,4 +16,9 @@ class HomeViewModel: HomeViewModelProtocol {
     @Published var clockTimes: [ClockTimeModel] = [ClockTimeModel]()
     let smallClockDimension: CGFloat = 200
     let bigClockDimension: CGFloat = 300
+    
+    func vibrationFeedback() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
 }

@@ -9,7 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Environment(\.horizontalSizeClass) var hSizeClass
+    @Environment(\.verticalSizeClass) var vSizeClass
+    
     @StateObject var homeViewModel = HomeViewModel()
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -17,19 +21,12 @@ struct HomeView: View {
             HomeHeaderView(homeViewModel: homeViewModel)
             Spacer()
             if self.homeViewModel.clockTimes.count > 0 {
-                ScrollView {
-                    VStack {
-                        ClockTimeView(homeViewModel: homeViewModel, place: "India", clockIndex: 0).frame(width: homeViewModel.bigClockDimension, height: homeViewModel.bigClockDimension)
-                        HStack {
-                            ClockTimeView(homeViewModel: homeViewModel, place: "UTC", clockIndex: 1).frame(width: homeViewModel.smallClockDimension, height: homeViewModel.smallClockDimension)
-                            ClockTimeView(homeViewModel: homeViewModel, place: "Los Angeles", clockIndex: 2).frame(width: homeViewModel.smallClockDimension, height: homeViewModel.smallClockDimension)
-                        }
-                        
-                        HStack {
-                            ClockTimeView(homeViewModel: homeViewModel, place: "New York", clockIndex: 3).frame(width: homeViewModel.smallClockDimension, height: homeViewModel.smallClockDimension)
-                            ClockTimeView(homeViewModel: homeViewModel, place: "London", clockIndex: 4).frame(width: homeViewModel.smallClockDimension, height: homeViewModel.smallClockDimension)
-                        }
-                    }
+               if hSizeClass == .compact && vSizeClass == .regular {
+                    // device orientation: portrait
+                    HomeViewPortrait(homeViewModel: homeViewModel)
+                } else {
+                    //device orientation: landscape
+                    HomeViewLandscape(homeViewModel: homeViewModel)
                 }
             }
         }.onReceive(timer, perform: { time in
@@ -42,6 +39,7 @@ struct HomeView: View {
                 homeViewModel.clockTimes[4] = ClockTimeModel(date: time, timeZoneIdentifier: "Europe/London")
             }
         }).onAppear {
+            print("HomeView \(hSizeClass) \(vSizeClass)")
             homeViewModel.clockTimes.append(ClockTimeModel(date: Date(),timeZoneIdentifier:  "Asia/Calcutta"))
             homeViewModel.clockTimes.append(ClockTimeModel(date: Date(),timeZoneIdentifier: "UTC"))
             homeViewModel.clockTimes.append(ClockTimeModel(date: Date(),timeZoneIdentifier:  "America/Los_Angeles"))

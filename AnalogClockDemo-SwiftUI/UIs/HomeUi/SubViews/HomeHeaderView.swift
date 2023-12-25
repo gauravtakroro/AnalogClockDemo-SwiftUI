@@ -17,6 +17,7 @@ struct HomeHeaderView: View {
             Button(action: {
                 print("moon icon tapped")
                 homeViewModel.isDark.toggle()
+                homeViewModel.vibrationFeedback()
             }, label: {
                 Image(systemName: homeViewModel.isDark ? "sun.min.fill" : "moon.fill")
                     .font(.system(size: 16))
