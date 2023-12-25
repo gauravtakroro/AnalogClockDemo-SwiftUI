@@ -26,15 +26,6 @@ struct HomeHeaderView: View {
                     .background(Color.primary)
                     .clipShape(Circle())
             })
-            Button(action: {
-                print("settings icon tapped")
-            }, label: {
-                Image(systemName: homeViewModel.isDark ? "gearshape.fill" : "gearshape")
-                    .font(.system(size: 36))
-                    .foregroundColor(homeViewModel.isDark ? .white : .black)
-                    .padding()
-                    .clipShape(Circle())
-            })
         }.padding(.trailing, 20)
     }
 }
